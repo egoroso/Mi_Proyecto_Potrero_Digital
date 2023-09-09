@@ -1,0 +1,71 @@
+/*Estilo para el body */
+body {
+    background-color: hsl(170, 63%, 28%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+/*Estilo para el titulo y que tenga movimiento*/
+h1 {
+    animation: titulo 2s ease-in-out infinite alternate;
+    color: hsl(244, 65%, 19%);
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+}
+/*Estilo para el subtitulo_1 */
+.subtitulo_1 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+/*Estilo para el subtitulo_2 */
+.subtitulo_2 {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+    color: red
+}
+/*Estilo para ul */
+.ingredientes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/*Estilos para ol */
+.preparacion {
+    counter-reset: paso;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+/*Estilo para el iframe id="ubicacion" */
+#ubicacion {
+    display: block;
+    margin: 0 auto;
+}
+/*Estilo para audio */
+audio {
+    display: block;
+    margin: 0 auto;
+}
+/*Estilo para el iframe id="video" */
+#video {
+    display: block;
+    margin: 0 auto;
+}
+/*Estilo para imagen_1 centrada*/
+.imagen_1 {
+    display: block;
+    margin: 0 auto;
+}
+
+
