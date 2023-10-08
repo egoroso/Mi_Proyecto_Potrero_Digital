@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Empresa</title>
+    <title>Tus Recetas Gratis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
-<body>
+<body class="body-flexbox">
     <header>
-        <img src="./imagenes/images.jfif" alt="Logo de Tu Empresa">
-        <nav>
-            <ul>
-                <li><a href="https://webosfritos.es/">Inicio</a></li>
-                <li><a href="http://www.loscerezosenflor.com/">Recetas</a></li>
-                <li><a href="https://www.hogarmania.com/">Videos</a></li>
-                <li><a href="https://www.cocinatis.com/">Ubicación</a></li>
-                <li><a href="https://cocinandoentreolivos.com/">Audio</a></li>
-            </ul>
-        </nav>
+        <div class="header-left">
+          <img src="./imagenes/images.jfif" alt="Logo de Tu Empresa">
+          <h1>Tus Recetas Gratis</h1>
+        </div>
+        <div class="header-right">
+          <div class="redes-sociales">
+            <h3>Síguenos en redes sociales:</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
     </header>
+     
+    
+    <!-- ... Existing header content ... -->
+    <nav class="main-nav">
+        <ul>
+          <li><a href="#ingredientes">Ingredientes</a></li>
+          <li><a href="#preparacion">Preparación</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#musica">Música</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+       </ul>
+      </nav>
 
     <!-- Sección Hero -->
     <section class="hero">
@@ -99,14 +115,28 @@
         <!-- Contenido de la sección de Videos -->
         <iframe id="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.4490711980516!2d-63.78096731009413!3d-37.37921090011808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95e8458f2f9fe00d%3A0xc186d110da9dbe5a!2sAlemanes%20del%20Volga!5e0!3m2!1ses!2sar!4v1693609579737!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-
+    
     <footer>
-        <div class="redes-sociales">
-            <h3>Síguenos en redes sociales:</h3>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="footer-left">
+          <div class="ubicacion">
+            <h3>Mapa de donde vivo</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.4490711980516!2d-63.78096731009413!3d-37.37921090011808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95e8458f2f9fe00d%3A0xc186d110da9dbe5a!2sAlemanes%20del%20Volga!5e0!3m2!1ses!2sar!4v1693609579737!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="redes-sociales">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="desarrollador">
+            <h3>Información del Desarrollador</h3>
+            <p>Nombre: Eduardo Goroso</p>
+            <p>Email: eduardogoroso@email.com</p>
+            <p>Teléfono: +542914632966</p>
+          </div>
         </div>
     </footer>
 
