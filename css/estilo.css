@@ -5,49 +5,99 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos para el body */
-body {
-    background-image: url('../imagenes/spaghetti-1932466_1280.jpg'); /* Agrega la imagen de fondo que desees */
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #fff; /* Color de texto */
-}
+/* Flexbox style for the body */
+.body-flexbox {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    min-height: 100vh; /* Make the body at least the height of the viewport */
+    background-image: url('../imagenes/spaghetti-1932466_1280.jpg'); /* Replace with the path to your background image */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    color: white; /* Change the text color */
+  }
 
 
-/* Estilos para el header */
+/* Flexbox styles for header */
 header {
-    background-color: #1a3140; /* Color de fondo - Tranquil Blue */
-    color: #fff; /* Color de texto - Blanco */
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header img {
-    max-height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
-    margin-left: 20px;
-}
-
-/* Estilos para el menú de navegación */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header-left {
     display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff; /* Color de texto - Blanco */
-    font-weight: bold;
+    align-items: center;
+  }
+  
+  .header-left img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .header-left h1 {
+    font-size: 24px;
+    align-items: center;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .redes-sociales a {
+    color: #fff;
     font-size: 18px;
-}
+    text-decoration: none;
+  }
+  
+  .redes-sociales a:hover {
+    color: #ff6600; /* Change the hover color as needed */
+  }
+
+  /* Flexbox styles for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    flex-wrap: wrap; /* Add flex-wrap property to wrap elements when screen size is reduced */
+  }
+
+  /* Styles for the main navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .main-nav li {
+    font-size: 18px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .main-nav a:hover {
+    color: #ff6600; /* Change the hover color as needed */
+  }
 
 /* Estilos para las secciones */
 section {
@@ -56,19 +106,30 @@ section {
     border: 1px solid #ddd;
 }
 
-/* Estilos para el footer */
+/* Flexbox styles for footer */
 footer {
-    background-color: #333; /* Color de fondo - Gris oscuro */
-    color: #fff; /* Color de texto - Blanco */
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer a {
-    color: #fff; /* Color de los enlaces en el footer */
-    text-decoration: none;
-    margin: 0 10px;
-}
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Add flex-wrap property to wrap elements when screen size is reduced */
+  }
+  
+  /* Styles for footer sections */
+  .footer-left,
+  .footer-right {
+    flex: 1;
+  }
+  
+  /* Media query to adjust footer layout on smaller screens */
+  @media (max-width: 768px) {
+    .footer-left,
+    .footer-right {
+      flex-basis: 100%; /* Make sections take full width on smaller screens */
+    }
+  }
+        
 
 /* Estilos para el botón flotante de WhatsApp */
 .whatsapp-btn {
@@ -98,7 +159,7 @@ footer a {
     background-size: cover;
     text-align: justify;
     padding: 100px 0;
-    color: #fff;
+    color: white;
 }
 
 .hero h1 {
@@ -116,7 +177,7 @@ footer a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff8000; /* Color de fondo - Naranja */
-    color: #110909; /* Color de texto - Blanco */
+    color: white; /* Color de texto - Blanco */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
