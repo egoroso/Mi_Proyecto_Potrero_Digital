@@ -1,71 +1,129 @@
-/*Estilo para el body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el body */
 body {
-    background-color: hsl(170, 63%, 28%);
+    background-image: url('../imagenes/spaghetti-1932466_1280.jpg'); /* Agrega la imagen de fondo que desees */
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0;
+    color: #fff; /* Color de texto */
+}
+
+
+/* Estilos para el header */
+header {
+    background-color: #1a3140; /* Color de fondo - Tranquil Blue */
+    color: #fff; /* Color de texto - Blanco */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-left: 20px;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
-/*Estilo para el titulo y que tenga movimiento*/
-h1 {
-    animation: titulo 2s ease-in-out infinite alternate;
-    color: hsl(244, 65%, 19%);
-    font-size: 40px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: underline;
+
+nav li {
+    margin-right: 20px;
 }
-/*Estilo para el subtitulo_1 */
-.subtitulo_1 {
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Color de texto - Blanco */
+    font-weight: bold;
     font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: underline;
-    color: red;
 }
-/*Estilo para el subtitulo_2 */
-.subtitulo_2 {
-    font-size: 17px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: underline;
-    color: red
+
+/* Estilos para las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
-/*Estilo para ul */
-.ingredientes {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo - Gris oscuro */
+    color: #fff; /* Color de texto - Blanco */
+    padding: 20px 0;
     text-align: center;
 }
-/*Estilos para ol */
-.preparacion {
-    counter-reset: paso;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+footer a {
+    color: #fff; /* Color de los enlaces en el footer */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Color de WhatsApp */
+    color: #fff; /* Color de texto - Blanco */
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Cambia el estilo del botón al pasar el mouse */
+.whatsapp-btn:hover {
+    background-color: #128c7e; /* Cambia el color al pasar el mouse */
+
+}
+
+.hero {
+    background-image: url(''); /* Agrega la imagen de fondo que desees */
+    background-size: cover;
     text-align: justify;
+    padding: 100px 0;
+    color: #fff;
 }
-/*Estilo para el iframe id="ubicacion" */
-#ubicacion {
-    display: block;
-    margin: 0 auto;
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
 }
-/*Estilo para audio */
-audio {
-    display: block;
-    margin: 0 auto;
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
-/*Estilo para el iframe id="video" */
-#video {
-    display: block;
-    margin: 0 auto;
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8000; /* Color de fondo - Naranja */
+    color: #110909; /* Color de texto - Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
-/*Estilo para imagen_1 centrada*/
-.imagen_1 {
-    display: block;
-    margin: 0 auto;
+
+.hero a:hover {
+    background-color: #1a3140; /* Color de resaltado - Tranquil Blue */
 }
 
 
