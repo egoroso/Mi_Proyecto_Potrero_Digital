@@ -187,39 +187,19 @@ footer {
     background-color: #1a3140; /* Color de resaltado - Tranquil Blue */
 }
 
-/* Flexbox styles for the Contacto link */
-.contacto-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  background-color: #ff6600; /* Background color */
-  color: #fff; /* Text color */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underlines from the link */
-}
-
-.contacto-link:hover {
-  background-color: #ff9933; /* Change background color on hover */
-}
-
-/* Flexbox styles for the Contacto link */
+/* Flexbox styles for the Index link */
 .index-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  background-color: #ff6600; /* Background color */
-  color: #fff; /* Text color */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underlines from the link */
-}
-
-.contacto-link:hover {
-  background-color: #ff9933; /* Change background color on hover */
-}
-
-
-
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ff6600; /* Background color */
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underlines from the link */
+  }
+  
+  .index-link:hover {
+    background-color: #ff9933; /* Change background color on hover */
+  }
+  
